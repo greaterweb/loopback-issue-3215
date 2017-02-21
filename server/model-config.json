@@ -16,7 +16,7 @@
   "Account": {
     "dataSource": "db"
   },
-  "AccessToken": {
+  "Token": {
     "dataSource": "db",
     "public": false
   },
