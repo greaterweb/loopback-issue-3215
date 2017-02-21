@@ -1,4 +1,14 @@
 {
   "name": "Account",
-  "base": "User"
+  "base": "User",
+  "relations": {
+    "tokens": {
+      "type": "hasMany",
+      "model": "Token",
+      "foreignKey": "userId",
+      "options": {
+        "disableInclude": true
+      }
+    }
+  }
 }
