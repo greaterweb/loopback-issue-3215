@@ -6,8 +6,8 @@ module.exports = function(app) {
   User.create({
     username: 'foo',
     email: 'foo@bar.com',
-    password: 'changeme'
-  }, (err, user) => {
+    password: 'changeme',
+  }, function(err, user) {
     if (err) {
       throw err;
     }
@@ -15,12 +15,11 @@ module.exports = function(app) {
     console.log('sample user created\n', JSON.stringify(user, null, '  '));
 
     user.email = 'bar@foo.com';
-    user.save((saveErr, saveUser) => {
+    user.save(function(saveErr, saveUser) {
       if (saveErr) {
         throw saveErr;
       }
       console.log('sample user saved\n', JSON.stringify(saveUser, null, '  '));
     });
-
   });
 };
