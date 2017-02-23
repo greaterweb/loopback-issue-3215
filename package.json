@@ -15,7 +15,7 @@
     "serve-favicon": "^2.0.1",
     "strong-error-handler": "^1.0.1",
     "loopback-component-explorer": "^4.0.0",
-    "loopback": "^3.0.0"
+    "loopback": "strongloop/loopback.git#fix/invalidate-tokens"
   },
   "devDependencies": {
     "eslint": "^2.13.1",
