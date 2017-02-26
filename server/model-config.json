@@ -13,7 +13,7 @@
       "./mixins"
     ]
   },
-  "Account": {
+  "user": {
     "dataSource": "db"
   },
   "AccessToken": {

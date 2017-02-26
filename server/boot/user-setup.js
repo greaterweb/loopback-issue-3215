@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = function(app) {
-  var User = app.models.Account;
+  var User = app.models.user;
 
   User.create({
     username: 'foo',
